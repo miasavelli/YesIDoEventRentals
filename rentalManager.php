@@ -1,6 +1,6 @@
 <?php
 try {
-    $dsn = 'mysql:host=localhost;dbname=itemRentals';
+    $dsn = 'mysql:host=localhost;dbname=rental_items';
     $username = 'root';
     $password = '';
     $db = new PDO($dsn, $username, $password);
@@ -37,8 +37,7 @@ $statement2->closeCursor();
 
 // Get products for selected category
 $queryProducts = 'SELECT * FROM products
-                  WHERE categoryID = :category_id
-                  ORDER BY productID';
+                  WHERE categoryID = :category_id';
 $statement3 = $db->prepare($queryProducts);
 $statement3->bindValue(':category_id', $category_id);
 $statement3->execute();
