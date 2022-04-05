@@ -209,7 +209,7 @@ INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDe
 (7, 'images/tablecloths/SpandexDustyBlue.jpg', 'Spandex Dusty Blue', '36" '),
 (7, 'images/tablecloths/RedSpandex.jpg', 'Spandex Red', '36" '),
 (7, 'images/tablecloths/SpandexLightPink.jpg', 'Spandex Pink', '36" '),
-(7, 'images/tablecloths/SpandexBlack.jpg', 'Spandex Black', '36" '),
+(7, 'images/tablecloths/SpandexBlack.jpg', 'Spandex Black', '36" ');
 
 
 
@@ -263,7 +263,6 @@ INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDe
 (10, 'images/misc/AdjustableBackdropStand.jpg', 'Backdrop Stand', 'Adjustable to 12'' H x 11'' W');
 
 INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
--- fix title and descriptions 
 (11, 'images/Candels/CandelabraCrystal.jpg', 'Candelabra', '4 arms Crystal 20 3/4" H'),
 (11, 'images/Candels/CandelabraAntiqueWhite.jpg', 'Candelabra', '4 arms Small Crystal & Antique White'),
 (11, 'images/Candels/SquareGlassTaperHolders.JPG', 'Square Glass Taper Candle Holder', '2.5" H x 1.5" W'),

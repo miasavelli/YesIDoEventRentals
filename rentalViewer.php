@@ -1,7 +1,7 @@
 <?php
 try {
-    $dsn = 'mysql:host=localhost;dbname=rental_items';
-    $username = 'root';
+    $dsn = 'mysql:host=gyruss.reclaimhosting.com;dbname=yesidoe1_rental_items';
+    $username = 'yesidoe1';
     $password = '';
     $db = new PDO($dsn, $username, $password);
 } catch (PDOException $e) {
@@ -9,6 +9,8 @@ try {
     include('database_error.php');
     exit();
 }
+
+
 
 // Get categories
 $queryCategory = 'SELECT products.productName, products.categoryID, products.productDesc, products.imgURL, categories.categoryName
