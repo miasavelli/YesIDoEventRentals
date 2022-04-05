@@ -1,24 +1,3 @@
-<?php
-try {
-    $dsn = 'mysql:host=localhost;dbname=rental_items';
-    $username = 'root';
-    $password = '';
-    $db = new PDO($dsn, $username, $password);
-} catch (PDOException $e) {
-    $error_message = $e->getMessage();
-    include('database_error.php');
-    exit();
-}
-// getAllCategories
-$queryAllCategories = 'SELECT * FROM categories
-                       ORDER BY categoryID';
-$statement2 = $db->prepare($queryAllCategories);
-$statement2->execute();
-$category = $statement2->fetch();
-$categories = $statement2->fetchAll();
-$statement2->closeCursor();
-
-?>
 <head>
     <title>Yes, I Do! Event Rentals</title>
 <meta charset="utf-8">
@@ -43,7 +22,7 @@ $statement2->closeCursor();
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+          <span class="fa fa-close text-primary"></span>
         </div>
       </div>
     <div class="site-mobile-menu-body"></div>
@@ -57,7 +36,7 @@ $statement2->closeCursor();
         </a>
       </div>
       <a href="#" class="mx-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black">
-        <span class="icon-menu h3"></span>
+      <span class="fa fa-bars text-primary"></span>
       </a>
     </div>
   </div>

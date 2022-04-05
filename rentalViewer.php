@@ -11,68 +11,58 @@ try {
 }
 
 // Get categories
-$queryCategory = 'SELECT * FROM categories';
+$queryCategory = 'SELECT products.productName, products.categoryID, products.productDesc, products.imgURL, categories.categoryName
+FROM categories
+INNER JOIN products
+ON products.categoryID = categories.categoryID';
+$queryCat = 'SELECT * FROM categories';
 $statement1 = $db->prepare($queryCategory);
+$statement2 = $db->prepare($queryCat);
 $statement1->execute();
-$category = $statement1->fetch();
-$categories = $statement1->fetchAll();
+$statement2->execute();
+$products = $statement1->fetchAll(); // gets all products
+$categories = $statement2->fetchAll();
 $statement1->closeCursor();
+$statement2->closeCursor();
 
-//Get products for selected category
-$queryProducts = 'SELECT * FROM products';
-$statement3 = $db->prepare($queryProducts);
-$statement3->execute();
-$product = $statement3->fetch();
-$products = $statement3->fetchAll();
-$statement3->closeCursor();
+
+echo "<!DOCTYPE html><html>";
+include('templates/header.php');
+echo "<body><main><div class=\"site-section mt-5\">
+            <div class=\"container\">
+                <div class=\"row mb-5\">
+                    <div class=\"col-12 section-title text-center mb-5\">";
+
+                    
+
+foreach($categories as $category) {
+    echo "<div class=\"row mb-5\">";
+    echo "<div class=\"col-12 section-title text-center mb-5\">";
+    echo "<h2 class=\"dblock\">";
+    echo $category['categoryName'];
+    echo "</h2><br></div></div>";
+    echo "<div class=\"row\">";
+
+    foreach($products as $product) { 
+        if ($product['categoryID'] == $category['categoryID']) {
+            echo "<div class=\"col-lg-4 mb-5 col-md-6\">";
+            echo "<div class=\"wine_v_1 text-center pb-4\">";
+            echo "<a href=\"\" class=\"thumbnail d-block mb-4\"><img src=";
+            echo $product['imgURL']; 
+            echo " style=\"height:380px;\" alt=\"Image\" class=\"img-fluid\"></a><div><h3 class=\"heading mb-1\"><a href=\"#\">";
+            echo $product['productName'];
+            echo "</a></h3><span class=\"price\">";
+            echo $product['productDesc'];
+            echo "</span></div></div></div>";
+        }
+    }
+    echo "</div>";
+
+}
+
+    echo "</div></div></div></div></main>";
+
+include('templates/footer.php');
+echo "</body></html>";
+
 ?>
-
-<!DOCTYPE html>
-<html>
-<?php include('templates/header.php');    ?>
-
-<body>
-    <main>
-
-        <div class="site-section mt-5">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-12 section-title text-center mb-5">
-
-
-                        <?php foreach ($categories as $category) : ?>
-
-                        <div class="row mb-5">
-                            <div class="col-12 section-title text-center mb-5">
-                                <h2 class="dblock"><?php echo $category['categoryName']; ?></h2>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <?php foreach ($products as $product ) : 
-                                if ($product['categoryID'] == $category['categoryID']) { ?>
-
-                                <div class="col-lg-4 mb-5 col-md-6">
-                                    <div class="wine_v_1 text-center pb-4">
-                                        <a href="" class="thumbnail d-block mb-4"><img src="./<?php echo $product['imgURL']; ?>" style="height:380px;" alt="Image" class="img-fluid"></a>
-                                        <div>
-                                            <h3 class="heading mb-1"><a href="#"><?php echo $product['productName']; ?></a>
-                                            </h3>
-                                            <span class="price"><?php echo $product['productDesc']; ?></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php } endforeach; ?>
-                        </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <?php include('templates/footer.php');    ?>
-</body>
-
-</html>

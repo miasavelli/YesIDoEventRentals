@@ -149,7 +149,7 @@ INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDe
 (5, 'images/Dishes/PalmLeafDinnerwareDinnerbreadandbutteronly.jpg', 'Palm Leaf Dinnerware', 'Dinner Plate / Bread & Butter Plate'),
 (5, 'images/Dishes/PeacockDinnerwaredinbreadonly.jpg', 'Peacock Dinnerware', 'Dinner Plate / Bread & Butter Plate'),
 (5, 'images/Dishes/iridescentBowl.png', 'Iridescent Clear Bowl', 'Soup /  Salad'),
-(5, 'images/Dishes/IridescentClear.jpg', 'Iridescent Clear', 'Dinner / Salad');
+(5, 'images/Dishes/SlantedHammeredGlassBowl.jpg', 'Iridescent Clear', 'Dinner / Salad');
 
 INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
 (6, 'images/silverware/GoldSilverware.png', 'Farrah Mercer Silverware', '5 Piece Place Setting (can be rented individually)'),
@@ -203,18 +203,17 @@ INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDe
 (7, 'images/tablecloths/SatinOffWhiteRound.jpg', 'Satin Off White', '120" Round'),
 (7, 'images/tablecloths/SatinWhiteRound.jpg', 'Satin White', '120" Round'),
 (7, 'images/tablecloths/SpandexShinyMetalicChampagne.jpg', 'Spandex Shiny Metallic Champagne', '36" '),
-(7, 'images/tablecloths/SpandexWhite.jpg', 'Spandex White', '36" ');
-
-
-
-
-INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
+(7, 'images/tablecloths/SpandexWhite.jpg', 'Spandex White', '36" '),
 (7, 'images/tablecloths/SpandexNavyBlue.jpg', 'Spandex Navy', '36" '),
 (7, 'images/tablecloths/SpandexRoyalBlue.jpg', 'Spandex Royal Blue', '36" '),
 (7, 'images/tablecloths/SpandexDustyBlue.jpg', 'Spandex Dusty Blue', '36" '),
 (7, 'images/tablecloths/RedSpandex.jpg', 'Spandex Red', '36" '),
 (7, 'images/tablecloths/SpandexLightPink.jpg', 'Spandex Pink', '36" '),
 (7, 'images/tablecloths/SpandexBlack.jpg', 'Spandex Black', '36" '),
+
+
+
+INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
 (8, 'images/napkins/ChampagneSatin.jpg', 'Champagne', 'Satin'),
 (8, 'images/napkins/AntiqueGoldSatin.jpg', 'Antique Gold', 'Satin'),
 (8, 'images/napkins/BrightGoldSatin.jpg', 'Bright Gold', 'Satin'),
