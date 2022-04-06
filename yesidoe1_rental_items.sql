@@ -28,33 +28,33 @@ SET time_zone = "+00:00";
 -- Table structure for table `categories`
 --
 
-CREATE TABLE `categories` (
-  `categoryID` int NOT NULL,
-  `categoryName` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- CREATE TABLE `categories` (
+--   `categoryID` int NOT NULL,
+--   `categoryName` varchar(255) NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `categories`
 --
 
-INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
-(1, 'Tables'),
-(2, 'Chairs'),
-(3, 'Glasses'),
-(4, 'Chargers'),
-(5, 'Dishes'),
-(6, 'Silverware'),
-(7, 'Tablecloths'),
-(8, 'Napkins'),
-(9, 'Chair Sashes'),
-(10, 'Backdrops'),
-(11, 'Candles'),
-(12, 'Vases'),
-(13, 'Catering'),
-(14, 'Signs'),
-(15, 'Beverage Tubs'),
-(16, 'Dessert Servers'),
-(17, 'Specialty');
+-- INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
+-- (1, 'Tables'),
+-- (2, 'Chairs'),
+-- (3, 'Glasses'),
+-- (4, 'Chargers'),
+-- (5, 'Dishes'),
+-- (6, 'Silverware'),
+-- (7, 'Tablecloths'),
+-- (8, 'Napkins'),
+-- (9, 'Chair Sashes'),
+-- (10, 'Backdrops'),
+-- (11, 'Candles'),
+-- (12, 'Vases'),
+-- (13, 'Catering'),
+-- (14, 'Signs'),
+-- (15, 'Beverage Tubs'),
+-- (16, 'Dessert Servers'),
+-- (17, 'Specialty');
 
 -- --------------------------------------------------------
 
@@ -62,18 +62,18 @@ INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
 -- Table structure for table `products`
 --
 
-CREATE TABLE `products` (
-  `categoryID` int NOT NULL,
-  `imgURL` varchar(655) NOT NULL,
-  `productName` varchar(255) NOT NULL,
-  `productDesc` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- CREATE TABLE `products` (
+--   `categoryID` int NOT NULL,
+--   `imgURL` varchar(655) NOT NULL,
+--   `productName` varchar(255) NOT NULL,
+--   `productDesc` varchar(255) NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
+INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
 (1, 'images/tables/36inWhiteRoundCocktail.JPG', 'White Folding Table', '36\" Round'),
 (1, 'images/tables/60inWhiteRoundFold.JPG', 'White Folding Table', '60\" Round'),
 (1, 'images/tables/6ftRectangleFold.JPG', 'White Folding Table', '6\' Rectangle'),
@@ -86,9 +86,9 @@ INSERT INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VA
 (2, 'images/chairs/whiteChair.jpg', 'Classic Folding Chair', 'White'),
 (2, 'images/chairs/PhoenixDoubleC.jpg', 'Phoenix Double C', 'Clear'),
 (2, 'images/chairs/RattanChair.png', 'Rattan Folding Garden Chair', 'Wooden'),
-(2, 'images/chairs/GoldCushion.jpg', 'Cushion', 'Gold'),
-(2, 'images/chairs/IvoryCushion.jpg', 'Cushion', 'Ivory'),
-(2, 'images/chairs/BlackCloth.png', 'Cushion', 'Black'),
+(2, 'images/chairs/GoldCushion.jpg', 'Cushion', 'Gold Vinyl'),
+(2, 'images/chairs/IvoryCushion.jpg', 'Cushion', 'Ivory Cloth'),
+(2, 'images/chairs/BlackCloth.png', 'Cushion', 'Black Cloth'),
 (2, 'images/chairs/WhiteVinylSeatCover.png', 'Cushion', 'White Vinyl'),
 (3, 'images/glasses/AcopaLoBallRocksDoubleOldFashionedWater10oz.png', 'Acopa 10 oz.', 'LoBall / Rocks / Double Old Fashioned / Water'),
 (3, 'images/glasses/catalina12ozMargarita.jpg', 'Catalina 12 oz.', 'Margarita'),
@@ -145,8 +145,8 @@ INSERT INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VA
 (5, 'images/Dishes/SlantedHammeredGlassBowl.jpg', 'Slanted Hammered Glass', 'Soup'),
 (5, 'images/Dishes/PalmLeafDinnerwareDinnerbreadandbutteronly.jpg', 'Palm Leaf Dinnerware', 'Dinner Plate / Bread & Butter Plate'),
 (5, 'images/Dishes/PeacockDinnerwaredinbreadonly.jpg', 'Peacock Dinnerware', 'Dinner Plate / Bread & Butter Plate'),
-(5, 'images/Dishes/IridescentClear.jpg', 'Iridescent Clear', 'Salad'),
-(5, 'images/Dishes/SlantedHammeredGlassBowl.jpg', 'Iridescent Clear', 'Dinner / Salad'),
+(5, 'images/Dishes/iridescentBowl.png', 'Iridescent Clear Bowl', 'Soup /  Salad'),
+(5, 'images/Dishes/iridescentClear.jpg', 'Iridescent Clear Plate', 'Dinner & Salad Available'),
 (6, 'images/silverware/GoldSilverware.png', 'Farrah Mercer Silverware', '5 Piece Place Setting (can be rented individually)'),
 (6, 'images/silverware/WallaceBeeware.jpg', 'Wallace Beeware', '5 Piece Place Setting (can be rented individually)'),
 (6, 'images/silverware/WallaceBeewareServingItems.jpg', 'Wallace Beeware', '5 Piece Place Setting (can be rented individually)'),

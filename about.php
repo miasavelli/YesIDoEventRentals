@@ -28,8 +28,8 @@
             <div class="site-section-heading pt-3 mb-4">
               <h2 class="text-black font-heading-serif">About Us</h2>
             </div>
-            <p>Yes I Do Event Rentals is a locally owned premier event rental company. We began our business to bring Tifton and  </p>
-            <p>surrounding counties the quality and high rental standards you would expect from places like Atlanta, Savannah and other large cities.</p>
+            <p>Yes I Do Event Rentals is a locally owned premier event rental company. We began our business to bring Tifton and 
+            surrounding counties the quality and high rental standards you would expect from places like Atlanta, Savannah and other large cities.</p>
             <p>Yes I Do Event Rentals takes pride in renting you a variety of quality items that add the special touches for a memorable impression. </p>
             <p>To us, every detail counts and we know every party is special. </p>
           </div>

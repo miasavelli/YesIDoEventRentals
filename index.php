@@ -31,7 +31,7 @@
                 <div class="col-12 section-title text-center mb-5">
                     <h2 class="d-block">Hello, welcome</h2>
                     <p>CONGRATULATIONS on planning your upcoming event - you're at the right place to start!</p>
-                    <p><a href="shop.php">View All Rentals <span class="fa fa-arrow-right"></span></a></p>
+                    <p><a href="rentalViewer.php">View All Rentals <span class="fa fa-arrow-right"></span></a></p>
                 </div>    
             </div>
             <div class="container">    
