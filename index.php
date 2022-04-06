@@ -14,6 +14,24 @@
         </div>
       </div>
 
+      <div class="intro-section container" style="background-image: url('images/gallery3.jpg');">
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-md-8">
+            <span class="sub-title">Welcome</span>
+            <h1>Rentals for any and all events!</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-section container" style="background-image: url('images/slideCharge.jpg');">
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-md-8">
+            <span class="sub-title">Welcome</span>
+            <h1>Rentals for any and all events!</h1>
+          </div>
+        </div>
+      </div>
+
       <div class="intro-section container" style="background-image: url('images/hero_2.jpg');">
         <div class="row justify-content-center text-center align-items-center">
           <div class="col-md-8">
