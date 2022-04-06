@@ -2,7 +2,7 @@
 try {
     $dsn = 'mysql:host=gyruss.reclaimhosting.com;dbname=yesidoe1_rental_items';
     $username = 'yesidoe1';
-    $password = '';
+    $password = 'V1Ppb7u3i4@DI[';
     $db = new PDO($dsn, $username, $password);
 } catch (PDOException $e) {
     $error_message = $e->getMessage();
