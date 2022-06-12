@@ -1,0 +1,16 @@
+INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
+(16, 'images/dessertServers/Swarovski.jpg', 'Gold Swarovski Crystal & Mirror Top Cake Stand', '16\" W'),
+(16, 'images/dessertServers/GoldGlass.png', 'Gold Glass Cake Stand', '10\" '),
+(16, 'images/dessertServers/WhiteGlassCakeStand.png', 'Whtie Glass Cake Stand', '10\" W x 4\" H'),
+(16, 'images/dessertServers/PinkStand.png', 'Pink Glass Cake Stand', '12\" W x 5\" H'),
+(16, 'images/dessertServers/DessertDisplay.jpg', 'Riser Sizes 5 1/2\" H to 11 3/4\" H', 'Square Glass 14\", Rectangle Glass 36" L x 8\" W '),
+(16, 'images/dessertServers/Display.png', 'Buffet / Dessert / Appetizer Step Display', '20 3/4\" L x 23 1/2\" W'),
+(16, 'images/dessertServers/RoundDisplay.png', 'Round Display Shelf', 'Clear Tempered Glass 14\"'),
+(16, 'images/dessertServers/RectangleDisplay.png', 'Rectange Display / Shelf', 'Clear Tempered Glass 33 1/2\" W x 14\" D'),
+(16, 'images/dessertServers/StainlessSteelServing.png', 'Round Stainless Steel Serving Tray', '14\" ' ),
+(16, 'images/dessertServers/3PieceGoldRiserSet.png', '3-Piece Riser Set for Serving Trays / Glass Shelves', 'Gold Metal 1 1/2\" H, 3\" H & 5\" H'),
+(16, 'images/dessertServers/SkycapTrays.png', 'Skycap Multi-Level Riser for Dessert Servers / Trays', 'Varying Sizes 8\" to 12\" H'),
+(16, 'images/dessertServers/AgedColumnRiser.png', 'Aged Column Riser for Glass Displays / Trays', '10\" H x 14\" W'),
+(16, 'images/dessertServers/LShapeRiser.png', 'L-Shape Riser Set for Clear Glass Trays / Shelves', '6 1/4\" H x 4\" W'),
+(16, 'images/dessertServers/FauxWood.png', 'Faux Wood Dessert Servers / Tray with Pedestals', '16\" '),
+(16, 'images/dessertServers/ClearAcrylicCakePlate.png', 'Clear Acrylic - Open Bottom to add lights, flowers, etc.', '28.5\" L x 18\" W x 4.25\" D');

@@ -1,0 +1,22 @@
+-- please insert please please
+INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES 
+(12, 'images/vases/SmallSingleFlowerRippledGlassPinkVase.jpg', 'Pink Single Flower Rippled Glass', '4 3/8\" H x 3 5/8\" L x 2 1/4\" W Opening 3/4\"'),
+(12, 'images/vases/SmallSingleFlowerRippledGlassPinkVase2.jpg', 'Pink Single Flower Rippled Glass', '4 3/4\" H x 2 3/4\" L x 2 1/4\" W Opening 3/4\"'),
+(12, 'images/vases/RoundRidgeSolidPinkGlassVase.png', 'Round Ridge Solid Pink Glass Vase', '5\" H x 4 1/2\" W 1\" Opening'),
+(12, 'images/vases/RoundPinkGlassVase.png', 'Round Pink Glass Vase', '5 1/4\" H x 4 1/4\" W 2 1/2\" Opening'),
+(12, 'images/vases/RidgedClearPinkGlassVase.png', 'Round Pink Glass Vase', '5 1/4\" H x 4 1/4\" W 2 1/2\" Opening'),
+(12, 'images/vases/PrestigeGoldUrn.jpg', 'Prestige Gold Urn', '2 sizes - 12.75\" W x 10\" H & 9\" H x 8\" W'),
+(12, 'images/vases/PedestalMetalUrn.jpg', 'Pedestal Metal Urn', '11\" H x 5\" W'),
+(12, 'images/vases/MossCoveredCowboyBoot.png', 'Moss Covered Cowboy Boot', 'Plastic Liner Inside | 13\" H x 4.5\" W x 10.5\" L'),
+(12, 'images/vases/MossCoveredPurse.jpg', 'Natural Preserve Moss Covered Purse', 'Plastic Liner Inside | 14 3/4\" H x 4.5\" W x 12.5\" L'),
+(12, 'images/vases/GoldPrismCut2sizes.jpg', 'Gold Prism Cut Vase', '2 sizes - 7 1/4\" H x 4 3/4\" W & 9 1/2\" H x 4 1/4\" W'),
+(12, 'images/vases/GoldLuster2sizes.jpg', 'Gold Luster Vase', '2 sizes - 8 1/4\" H x 7 1/2\" W & 4 1/4\" H x 5\" W'),
+(12, 'images/vases/InvertedCircleGoldGlassVase2sizes.jpg', 'Inverted Circle Gold Glass Vase', '2 sizes - 7 3/4\" H x 5 1/8\" W & 6\" H x 4 1/2\" W'),
+(12, 'images/vases/GoldKingsCrownVases.jpg', 'Gold Kings Crown Vases', 'Various Sizes'),
+(12, 'images/vases/GoldMercuryCarrawayFlowerVase.jpg', 'Gold Mercury Carraway Flower Vase', '4 1/4\" H x 7 1/2 L x 5 1/4\" W'),
+(12, 'images/vases/BubbleBottomCylinder.jpg', 'Bubble Bottle Clear Glass Cylinder', 'Various Sizes'),
+(12, 'images/vases/TrumpetVaseClearGlass.jpg', 'Trumpet Vase Clear Glass', '28\" H x 5\" W'),
+(12, 'images/vases/OmbreCylinderVase.jpg', 'Ombre Cylinder Vase Blue Glass', '12\" H x 2\" W'),
+(12, 'images/vases/MiamiTrumpetVase.jpg', 'Miami Trumpet Vase White Milk Glass', '18\" H x 5\" W'),
+(12, 'images/vases/HollyWoodTrumpet.jpg', 'Hollywood Ball Trumpet Vase Gold Mercury Glass', '24\" H x 5\" W'),
+(12, 'images/vases/JeweledDuo.jpg', 'Jeweled Crystal Duo Vase / Candle Holder', '18\" H x 5\" W');

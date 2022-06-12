@@ -1,0 +1,17 @@
+INSERT IGNORE INTO `products` (`categoryID`, `imgURL`, `productName`, `productDesc`) VALUES
+(10, 'images/backdrops/blackSequin.jpg', 'Black Sequin Backdrop', 'Max 20\' W x Max 10\' H'),
+(10, 'images/backdrops/silverSequin.jpg', 'Silver Sequin Backdrop', 'Max 20\' W x Max 10\' H'),
+(10, 'images/backdrops/champagneSequin.jpg', 'Champagne Sequin Backdrop', 'Max 20\' W x Max 10\' H'),
+(10, 'images/backdrops/goldSequin.jpg', 'Gold Sequin Backdrop', 'Max 20\' W x Max 10\' H'),
+(10, 'images/backdrops/pinkSequin.jpg', 'Pink Sequin Backdrop', 'Max 20\' W x Max 10\' H'),
+(10, 'images/backdrops/OnceUponATimeVinyl.jpg', 'Vinyl \'Once Upon A Time\' Backdrop', '7\' H x 5\' W'),
+(10, 'images/backdrops/bamboo.jpg', 'Bamboo Backdrop', '6\' H x 8\' W'),
+(10, 'images/backdrops/GoldLighted.JPG', 'Gold Lighted', '12\' H x 4\' 4\" W'),
+(10, 'images/backdrops/goldPayette.jpg', 'Gold Payette', '12\' H x 4\' 4\" W'),
+(10, 'images/backdrops/turquoisePayette.jpg', 'Iridescent Payette', '12\' H x 4\' 4\" W'),
+(10, 'images/backdrops/GoldMetalRing.jpg', 'Gold Metallic Ring', '5\' D'),
+(10, 'images/misc/AdjustableBackdropStand.jpg', 'Backdrop Stand', 'Adjustable to 12\' H x 11\' W'),
+(10, 'images/backdrops/NavyBlueMetallicSparkle.jpg', 'Navy Blue Metallic Sparkle', 'Max 20\' W x Max 10\' H'),
+(10, 'images/backdrops/goldMetallicSparkle.JPG', 'Gold Metallic Sparkle', 'Max 20\' W x Max 10\' H'),
+(10, 'images/backdrops/smallBoxwood.jpg', 'Small Boxwood', '11'' Square'),
+(10, 'images/backdrops/squareHydrangea.jpg', 'Hydrangea', '11\' Square');
